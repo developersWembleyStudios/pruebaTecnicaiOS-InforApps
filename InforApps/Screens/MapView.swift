@@ -14,6 +14,8 @@ struct Location: Identifiable {
 }
 
 struct MapView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
     @StateObject private var viewModel = MapViewModel()
     
     var coordinate: CLLocationCoordinate2D
@@ -31,6 +33,12 @@ struct MapView: View {
     }
     
     var body: some View {
+        ZStack{
+            //Title_Custom_Toolbar
+            CustomToolBarBackButtonView(title: NSLocalizedString("Title_Custom_Toolbar", comment: ""))  {
+                presentationMode.wrappedValue.dismiss()
+            }
+        }
         VStack{
             Map(coordinateRegion: $cameraPosition, annotationItems: [Location(coordinate: coordinate)]) { location in
                 MapMarker(coordinate: location.coordinate, tint: .red)

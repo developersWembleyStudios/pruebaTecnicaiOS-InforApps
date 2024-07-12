@@ -24,7 +24,6 @@
 		F0BF02792C4025B1003C8AD9 /* GeoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF026D2C4025B1003C8AD9 /* GeoEntity+CoreDataProperties.swift */; };
 		F0BF027A2C4025B1003C8AD9 /* AddressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF026E2C4025B1003C8AD9 /* AddressEntity+CoreDataClass.swift */; };
 		F0BF027B2C4025B1003C8AD9 /* AddressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF026F2C4025B1003C8AD9 /* AddressEntity+CoreDataProperties.swift */; };
-		F0BF02832C403A83003C8AD9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02822C403A83003C8AD9 /* ViewModel.swift */; };
 		F0BF02862C407444003C8AD9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02852C407444003C8AD9 /* NetworkService.swift */; };
 		F0BF02882C40746A003C8AD9 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02872C40746A003C8AD9 /* CoreDataService.swift */; };
 		F0BF028B2C4074B4003C8AD9 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */; };
@@ -38,6 +37,7 @@
 		F0BF02A72C413038003C8AD9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02A62C413038003C8AD9 /* WebView.swift */; };
 		F0BF02A92C4136E6003C8AD9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02A82C4136E6003C8AD9 /* MapView.swift */; };
 		F0BF02AB2C4140DA003C8AD9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02AA2C4140DA003C8AD9 /* MapViewModel.swift */; };
+		F0BF02AD2C414AA4003C8AD9 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02AC2C414AA4003C8AD9 /* ToolBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +60,6 @@
 		F0BF026D2C4025B1003C8AD9 /* GeoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F0BF026E2C4025B1003C8AD9 /* AddressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F0BF026F2C4025B1003C8AD9 /* AddressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F0BF02822C403A83003C8AD9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F0BF02852C407444003C8AD9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F0BF02872C40746A003C8AD9 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		F0BF02A62C413038003C8AD9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		F0BF02A82C4136E6003C8AD9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F0BF02AA2C4140DA003C8AD9 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F0BF02AC2C414AA4003C8AD9 /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,6 @@
 		F0BF02812C403A77003C8AD9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F0BF02822C403A83003C8AD9 /* ViewModel.swift */,
 				F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */,
 				F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */,
 				F0BF02AA2C4140DA003C8AD9 /* MapViewModel.swift */,
@@ -192,6 +191,7 @@
 			children = (
 				F0BF02912C410E17003C8AD9 /* Labels.swift */,
 				F0BF02942C411E50003C8AD9 /* Buttons.swift */,
+				F0BF02AC2C414AA4003C8AD9 /* ToolBar.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -290,13 +290,13 @@
 				F0BF02742C4025B1003C8AD9 /* CompanyEntity+CoreDataClass.swift in Sources */,
 				F0BF02712C4025B1003C8AD9 /* CommentEntity+CoreDataProperties.swift in Sources */,
 				F0BF028B2C4074B4003C8AD9 /* SplashScreen.swift in Sources */,
+				F0BF02AD2C414AA4003C8AD9 /* ToolBar.swift in Sources */,
 				F0BF02AB2C4140DA003C8AD9 /* MapViewModel.swift in Sources */,
 				F0BF02922C410E17003C8AD9 /* Labels.swift in Sources */,
 				F0BF028F2C40846A003C8AD9 /* DetailView.swift in Sources */,
 				F0BF02952C411E50003C8AD9 /* Buttons.swift in Sources */,
 				F0BF02732C4025B1003C8AD9 /* UserEntity+CoreDataProperties.swift in Sources */,
 				F0BF029D2C41259E003C8AD9 /* DetailViewModel.swift in Sources */,
-				F0BF02832C403A83003C8AD9 /* ViewModel.swift in Sources */,
 				F0BF027A2C4025B1003C8AD9 /* AddressEntity+CoreDataClass.swift in Sources */,
 				F0BF02932C411A99003C8AD9 /* InforApps.xcdatamodeld in Sources */,
 				F0BF022A2C40135B003C8AD9 /* HomeView.swift in Sources */,

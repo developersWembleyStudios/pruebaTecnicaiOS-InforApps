@@ -7,7 +7,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dirección"
+            "value" : "Address"
           }
         }
       }
@@ -18,7 +18,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cargando..."
+            "value" : "Loading..."
           }
         }
       }
@@ -29,7 +29,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cargando..."
+            "value" : "Loading..."
           }
         }
       }
@@ -40,7 +40,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Contenido"
+            "value" : "Content"
           }
         }
       }
@@ -51,7 +51,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Comentarios"
+            "value" : "Comments"
           }
         }
       }
@@ -62,7 +62,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Publicación"
+            "value" : "Post"
           }
         }
       }
@@ -73,7 +73,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Título"
+            "value" : "Title"
           }
         }
       }
@@ -84,7 +84,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Usuario"
+            "value" : "User"
           }
         }
       }
@@ -95,7 +95,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Compañía"
+            "value" : "Company"
           }
         }
       }
@@ -117,7 +117,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nombre"
+            "value" : "Name"
           }
         }
       }
@@ -128,7 +128,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dirección"
+            "value" : "Address"
           }
         }
       }
@@ -138,7 +138,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Publicaciones"
+            "value" : "Posts"
           }
         }
       }
@@ -149,7 +149,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Intentando recuperar los datos"
+            "value" : "Trying to recover the data"
           }
         }
       }
@@ -160,7 +160,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No hay valor"
+            "value" : "No data"
           }
         }
       }
@@ -171,7 +171,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Intentando recuperar los datos..."
+            "value" : "Trying to recover the data"
+          }
+        }
+      }
+    },
+    "Title_Custom_Toolbar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back to detail"
           }
         }
       }
@@ -182,7 +193,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sitio Web"
+            "value" : "Website"
           }
         }
       }

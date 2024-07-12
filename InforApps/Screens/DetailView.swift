@@ -56,28 +56,25 @@ struct DetailView: View {
                                 Spacer()
                             }
                             .padding(.top, 30)
-                            .padding(.bottom, 30)
-                            
-                            LabelTitle(title: NSLocalizedString("Detail_Comments_Title", comment: ""))
-                            VStack {
-                                Form {
-                                    ForEach(viewModel.commentsById!, id: \.self) {comment in
-                                        VStack(alignment: .leading) {
-                                            Text(comment.name ?? NSLocalizedString("No_Data", comment: ""))
-                                                .font(.headline)
-                                            Text(comment.email ?? NSLocalizedString("No_Data", comment: ""))
-                                                .font(.subheadline)
-                                                .lineLimit(1)
-                                        }
-                                    }
-                                }
-                            }
-                            .frame(height: 500)
                         }.offset(y: -50)
                             .fullScreenCover(isPresented: $showWebView, onDismiss: { showWebView = false}
                             ) {
                                 MapView(coordinate: CLLocationCoordinate2D(latitude: Double(user.address!.geo!.lat!)!, longitude: Double(user.address!.geo!.lng!)!), user: user)
                             }
+                        LabelTitle(title: NSLocalizedString("Detail_Comments_Title", comment: ""))
+                        VStack {
+                            ForEach(viewModel.commentsById!, id: \.self) {comment in
+                                VStack(alignment: .leading) {
+                                    Divider()
+                                    Text(comment.name ?? NSLocalizedString("No_Data", comment: ""))
+                                        .font(.headline)
+                                    Text(comment.email ?? NSLocalizedString("No_Data", comment: ""))
+                                        .font(.subheadline)
+                                        .lineLimit(1)
+                                }.padding(.leading, 30)
+                                    .padding(.trailing, 30)
+                            }
+                        }
                     }
                 } else {
                     Text(NSLocalizedString("Recover_Data", comment: ""))
