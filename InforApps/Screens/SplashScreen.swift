@@ -22,6 +22,8 @@ struct SplashScreen: View {
                 Text(NSLocalizedString("Charge_Data", comment: ""))
                     .onAppear {
                         viewModel.fetchAndSavePost()
+                        viewModel.fetchAndSaveUsers()
+                        viewModel.fetchAndSaveComment()
                     }
             }
         }

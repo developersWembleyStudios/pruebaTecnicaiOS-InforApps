@@ -28,4 +28,26 @@ class SplashViewModel: ObservableObject {
             }
         }
     }
+    
+        func fetchAndSaveUsers() {
+            NetworkService.shared.fetchDataUser { result in
+                switch result {
+                case .success(let users):
+                    CoreDataService.shared.saveUserElements(users)
+                case .failure(let error):
+                    print("Failed to fetch users: \(error)")
+                }
+            }
+        }
+    
+        func fetchAndSaveComment() {
+            NetworkService.shared.fetchDataComment { result in
+                switch result {
+                case .success(let comments):
+                    CoreDataService.shared.saveCommentElements(comments)
+                case .failure(let error):
+                    print("Failed to fetch comments: \(error)")
+                }
+            }
+        }
 }

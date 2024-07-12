@@ -35,6 +35,7 @@
 		F0BF02972C41250E003C8AD9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */; };
 		F0BF029D2C41259E003C8AD9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */; };
 		F0BF02A02C4127E3003C8AD9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */; };
+		F0BF02A72C413038003C8AD9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02A62C413038003C8AD9 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F0BF02A62C413038003C8AD9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				F0BF02292C40135B003C8AD9 /* HomeView.swift */,
 				F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */,
 				F0BF028E2C40846A003C8AD9 /* DetailView.swift */,
+				F0BF02A62C413038003C8AD9 /* WebView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				F0BF02702C4025B1003C8AD9 /* CommentEntity+CoreDataClass.swift in Sources */,
 				F0BF02882C40746A003C8AD9 /* CoreDataService.swift in Sources */,
 				F0BF02752C4025B1003C8AD9 /* CompanyEntity+CoreDataProperties.swift in Sources */,
+				F0BF02A72C413038003C8AD9 /* WebView.swift in Sources */,
 				F0BF02722C4025B1003C8AD9 /* UserEntity+CoreDataClass.swift in Sources */,
 				F0BF02742C4025B1003C8AD9 /* CompanyEntity+CoreDataClass.swift in Sources */,
 				F0BF02712C4025B1003C8AD9 /* CommentEntity+CoreDataProperties.swift in Sources */,
