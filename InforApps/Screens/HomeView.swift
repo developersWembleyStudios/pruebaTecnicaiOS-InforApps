@@ -23,9 +23,10 @@ struct HomeView: View {
                     NavigationLink(destination: DetailView(postId: Int(post.id), userId: Int(post.userId), post: post)) {
                         VStack(alignment: .leading) {
                             Text(post.title ?? "Unknown")
-                                .font(.headline)
-                            Text(post.body ?? "No Email")
-                                .font(.subheadline)
+                                .font(.custom("Inter-Bold", size: 19))
+                            Spacer().frame(height: 5)
+                            Text(post.body ?? NSLocalizedString("No_Data", comment: ""))
+                                .font(.custom("Inter-Medium", size: 16))
                                 .lineLimit(1)
                         }
                     }

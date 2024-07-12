@@ -34,7 +34,6 @@ struct MapView: View {
     
     var body: some View {
         ZStack{
-            //Title_Custom_Toolbar
             CustomToolBarBackButtonView(title: NSLocalizedString("Title_Custom_Toolbar", comment: ""))  {
                 presentationMode.wrappedValue.dismiss()
             }
@@ -47,22 +46,12 @@ struct MapView: View {
                 Button(action: {
                     viewModel.openWebsite(urlString: "https://www.\(user.website ?? "apple.com/es/")")
                 }) {
-                    HStack(spacing: 0) {
-                        Spacer().frame(width: 30)
-                        Text("User_Website")
-                            .tint(.black)
-                        Image(systemName: "apps.iphone")
-                            .padding(.top, 14)
-                            .padding(.bottom, 14)
-                            .padding(.leading, 20)
-                        Spacer()
-                    }
+                    ActAssignedButtonActionFinalization(text: NSLocalizedString("User_Website", comment: ""))
+                        .padding(.leading, 30)
+                        .padding(.trailing, 30)
                 }
-                .frame(width: 180, height: 20)
-                .buttonStyle(.bordered)
-                .tint(.green)
             }.background(.white)
-                .frame(height: 200)
+                .frame(height: 100)
         }.sheet(isPresented: $viewModel.showWebView) {
             if let url = viewModel.webViewURL {
                 WebView(url: url)
@@ -70,8 +59,3 @@ struct MapView: View {
         }
     }
 }
-
-
-//#Preview {
-//    MapView(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
-//}

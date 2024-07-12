@@ -37,7 +37,3 @@ struct CustomToolBarBackButtonView: View {
         }
     }
 }
-
-//#Preview {
-//    CustomToolBarBackButtonView(title: "Volver al detalle")
-//}

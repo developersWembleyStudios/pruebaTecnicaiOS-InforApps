@@ -30,7 +30,6 @@
 		F0BF028F2C40846A003C8AD9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF028E2C40846A003C8AD9 /* DetailView.swift */; };
 		F0BF02922C410E17003C8AD9 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02912C410E17003C8AD9 /* Labels.swift */; };
 		F0BF02932C411A99003C8AD9 /* InforApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02322C40135D003C8AD9 /* InforApps.xcdatamodeld */; };
-		F0BF02952C411E50003C8AD9 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02942C411E50003C8AD9 /* Buttons.swift */; };
 		F0BF02972C41250E003C8AD9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */; };
 		F0BF029D2C41259E003C8AD9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */; };
 		F0BF02A02C4127E3003C8AD9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */; };
@@ -38,6 +37,15 @@
 		F0BF02A92C4136E6003C8AD9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02A82C4136E6003C8AD9 /* MapView.swift */; };
 		F0BF02AB2C4140DA003C8AD9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02AA2C4140DA003C8AD9 /* MapViewModel.swift */; };
 		F0BF02AD2C414AA4003C8AD9 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02AC2C414AA4003C8AD9 /* ToolBar.swift */; };
+		F0BF02BB2C4163FB003C8AD9 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B22C4163FB003C8AD9 /* Inter-Thin.ttf */; };
+		F0BF02BC2C4163FB003C8AD9 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B32C4163FB003C8AD9 /* Inter-SemiBold.ttf */; };
+		F0BF02BD2C4163FB003C8AD9 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B42C4163FB003C8AD9 /* Inter-Light.ttf */; };
+		F0BF02BE2C4163FB003C8AD9 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B52C4163FB003C8AD9 /* Inter-Black.ttf */; };
+		F0BF02BF2C4163FB003C8AD9 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B62C4163FB003C8AD9 /* Inter-ExtraLight.ttf */; };
+		F0BF02C02C4163FB003C8AD9 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B72C4163FB003C8AD9 /* Inter-Regular.ttf */; };
+		F0BF02C12C4163FB003C8AD9 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B82C4163FB003C8AD9 /* Inter-ExtraBold.ttf */; };
+		F0BF02C22C4163FB003C8AD9 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02B92C4163FB003C8AD9 /* Inter-Medium.ttf */; };
+		F0BF02C32C4163FB003C8AD9 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0BF02BA2C4163FB003C8AD9 /* Inter-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +73,6 @@
 		F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F0BF028E2C40846A003C8AD9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F0BF02912C410E17003C8AD9 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
-		F0BF02942C411E50003C8AD9 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -73,6 +80,16 @@
 		F0BF02A82C4136E6003C8AD9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F0BF02AA2C4140DA003C8AD9 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		F0BF02AC2C414AA4003C8AD9 /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
+		F0BF02B02C416387003C8AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F0BF02B22C4163FB003C8AD9 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		F0BF02B32C4163FB003C8AD9 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		F0BF02B42C4163FB003C8AD9 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		F0BF02B52C4163FB003C8AD9 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		F0BF02B62C4163FB003C8AD9 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F0BF02B72C4163FB003C8AD9 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		F0BF02B82C4163FB003C8AD9 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F0BF02B92C4163FB003C8AD9 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		F0BF02BA2C4163FB003C8AD9 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +123,7 @@
 		F0BF02262C40135B003C8AD9 /* InforApps */ = {
 			isa = PBXGroup;
 			children = (
+				F0BF02B02C416387003C8AD9 /* Info.plist */,
 				F0BF029E2C4127CC003C8AD9 /* Resources */,
 				F0BF02902C410DF4003C8AD9 /* Elements */,
 				F0BF02322C40135D003C8AD9 /* InforApps.xcdatamodeld */,
@@ -177,11 +195,11 @@
 		F0BF02892C4074A7003C8AD9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				F0BF02292C40135B003C8AD9 /* HomeView.swift */,
 				F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */,
+				F0BF02292C40135B003C8AD9 /* HomeView.swift */,
 				F0BF028E2C40846A003C8AD9 /* DetailView.swift */,
-				F0BF02A62C413038003C8AD9 /* WebView.swift */,
 				F0BF02A82C4136E6003C8AD9 /* MapView.swift */,
+				F0BF02A62C413038003C8AD9 /* WebView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -190,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				F0BF02912C410E17003C8AD9 /* Labels.swift */,
-				F0BF02942C411E50003C8AD9 /* Buttons.swift */,
 				F0BF02AC2C414AA4003C8AD9 /* ToolBar.swift */,
 			);
 			path = Elements;
@@ -199,9 +216,26 @@
 		F0BF029E2C4127CC003C8AD9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F0BF02B12C41639F003C8AD9 /* Fonts */,
 				F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F0BF02B12C41639F003C8AD9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F0BF02B52C4163FB003C8AD9 /* Inter-Black.ttf */,
+				F0BF02BA2C4163FB003C8AD9 /* Inter-Bold.ttf */,
+				F0BF02B82C4163FB003C8AD9 /* Inter-ExtraBold.ttf */,
+				F0BF02B62C4163FB003C8AD9 /* Inter-ExtraLight.ttf */,
+				F0BF02B42C4163FB003C8AD9 /* Inter-Light.ttf */,
+				F0BF02B92C4163FB003C8AD9 /* Inter-Medium.ttf */,
+				F0BF02B72C4163FB003C8AD9 /* Inter-Regular.ttf */,
+				F0BF02B32C4163FB003C8AD9 /* Inter-SemiBold.ttf */,
+				F0BF02B22C4163FB003C8AD9 /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +300,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BF02BB2C4163FB003C8AD9 /* Inter-Thin.ttf in Resources */,
+				F0BF02C02C4163FB003C8AD9 /* Inter-Regular.ttf in Resources */,
 				F0BF022F2C40135D003C8AD9 /* Preview Assets.xcassets in Resources */,
 				F0BF022C2C40135D003C8AD9 /* Assets.xcassets in Resources */,
+				F0BF02BF2C4163FB003C8AD9 /* Inter-ExtraLight.ttf in Resources */,
+				F0BF02C12C4163FB003C8AD9 /* Inter-ExtraBold.ttf in Resources */,
+				F0BF02C32C4163FB003C8AD9 /* Inter-Bold.ttf in Resources */,
+				F0BF02BC2C4163FB003C8AD9 /* Inter-SemiBold.ttf in Resources */,
+				F0BF02BD2C4163FB003C8AD9 /* Inter-Light.ttf in Resources */,
 				F0BF02A02C4127E3003C8AD9 /* Localizable.xcstrings in Resources */,
+				F0BF02C22C4163FB003C8AD9 /* Inter-Medium.ttf in Resources */,
+				F0BF02BE2C4163FB003C8AD9 /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +337,6 @@
 				F0BF02AB2C4140DA003C8AD9 /* MapViewModel.swift in Sources */,
 				F0BF02922C410E17003C8AD9 /* Labels.swift in Sources */,
 				F0BF028F2C40846A003C8AD9 /* DetailView.swift in Sources */,
-				F0BF02952C411E50003C8AD9 /* Buttons.swift in Sources */,
 				F0BF02732C4025B1003C8AD9 /* UserEntity+CoreDataProperties.swift in Sources */,
 				F0BF029D2C41259E003C8AD9 /* DetailViewModel.swift in Sources */,
 				F0BF027A2C4025B1003C8AD9 /* AddressEntity+CoreDataClass.swift in Sources */,
@@ -443,6 +485,7 @@
 				DEVELOPMENT_TEAM = A53A9C9N74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InforApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +515,7 @@
 				DEVELOPMENT_TEAM = A53A9C9N74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InforApps/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

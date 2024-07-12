@@ -15,6 +15,7 @@ class SplashViewModel: ObservableObject {
     @Published var isDataUserLoaded = false
     @Published var isDataCommentLoaded = false
     
+    //Function that searches for and stores Post objects
     func fetchAndSavePost() {
         NetworkService.shared.fetchDataPost { result in
             switch result {
@@ -29,25 +30,27 @@ class SplashViewModel: ObservableObject {
         }
     }
     
-        func fetchAndSaveUsers() {
-            NetworkService.shared.fetchDataUser { result in
-                switch result {
-                case .success(let users):
-                    CoreDataService.shared.saveUserElements(users)
-                case .failure(let error):
-                    print("Failed to fetch users: \(error)")
-                }
+    //Function that searches for and stores User objects
+    func fetchAndSaveUsers() {
+        NetworkService.shared.fetchDataUser { result in
+            switch result {
+            case .success(let users):
+                CoreDataService.shared.saveUserElements(users)
+            case .failure(let error):
+                print("Failed to fetch users: \(error)")
             }
         }
+    }
     
-        func fetchAndSaveComment() {
-            NetworkService.shared.fetchDataComment { result in
-                switch result {
-                case .success(let comments):
-                    CoreDataService.shared.saveCommentElements(comments)
-                case .failure(let error):
-                    print("Failed to fetch comments: \(error)")
-                }
+    //Function that searches for and stores Comment objects
+    func fetchAndSaveComment() {
+        NetworkService.shared.fetchDataComment { result in
+            switch result {
+            case .success(let comments):
+                CoreDataService.shared.saveCommentElements(comments)
+            case .failure(let error):
+                print("Failed to fetch comments: \(error)")
             }
         }
+    }
 }
