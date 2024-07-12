@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct SplashScreen: View {
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: SplashViewModel
     
     var body: some View {
         VStack {
             if viewModel.isDataPostLoaded {
                 HomeView()
             } else {
-                Image("InforAppsImage")
+                Image(.inforApps)
                     .resizable()
                     .scaledToFit()
                     .padding()
-                Text("Cargando...")
+                Text(NSLocalizedString("Charge_Data", comment: ""))
                     .onAppear {
                         viewModel.fetchAndSavePost()
                     }

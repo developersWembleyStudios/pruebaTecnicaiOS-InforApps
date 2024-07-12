@@ -11,7 +11,6 @@
 		F0BF022A2C40135B003C8AD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02292C40135B003C8AD9 /* HomeView.swift */; };
 		F0BF022C2C40135D003C8AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BF022B2C40135D003C8AD9 /* Assets.xcassets */; };
 		F0BF022F2C40135D003C8AD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BF022E2C40135D003C8AD9 /* Preview Assets.xcassets */; };
-		F0BF02342C40135D003C8AD9 /* InforApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02322C40135D003C8AD9 /* InforApps.xcdatamodeld */; };
 		F0BF023E2C401A1D003C8AD9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF023D2C401A1D003C8AD9 /* Model.swift */; };
 		F0BF02702C4025B1003C8AD9 /* CommentEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02642C4025B1003C8AD9 /* CommentEntity+CoreDataClass.swift */; };
 		F0BF02712C4025B1003C8AD9 /* CommentEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02652C4025B1003C8AD9 /* CommentEntity+CoreDataProperties.swift */; };
@@ -31,6 +30,11 @@
 		F0BF028B2C4074B4003C8AD9 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */; };
 		F0BF028F2C40846A003C8AD9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF028E2C40846A003C8AD9 /* DetailView.swift */; };
 		F0BF02922C410E17003C8AD9 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02912C410E17003C8AD9 /* Labels.swift */; };
+		F0BF02932C411A99003C8AD9 /* InforApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02322C40135D003C8AD9 /* InforApps.xcdatamodeld */; };
+		F0BF02952C411E50003C8AD9 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02942C411E50003C8AD9 /* Buttons.swift */; };
+		F0BF02972C41250E003C8AD9 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */; };
+		F0BF029D2C41259E003C8AD9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */; };
+		F0BF02A02C4127E3003C8AD9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		F0BF028A2C4074B4003C8AD9 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F0BF028E2C40846A003C8AD9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F0BF02912C410E17003C8AD9 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		F0BF02942C411E50003C8AD9 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,7 @@
 		F0BF02262C40135B003C8AD9 /* InforApps */ = {
 			isa = PBXGroup;
 			children = (
+				F0BF029E2C4127CC003C8AD9 /* Resources */,
 				F0BF02902C410DF4003C8AD9 /* Elements */,
 				F0BF02322C40135D003C8AD9 /* InforApps.xcdatamodeld */,
 				F0BF02272C40135B003C8AD9 /* InforAppsApp.swift */,
@@ -124,8 +133,8 @@
 		F0BF025B2C402056003C8AD9 /* CoreDataClass */ = {
 			isa = PBXGroup;
 			children = (
-				F0BF02642C4025B1003C8AD9 /* CommentEntity+CoreDataClass.swift */,
 				F0BF02652C4025B1003C8AD9 /* CommentEntity+CoreDataProperties.swift */,
+				F0BF02642C4025B1003C8AD9 /* CommentEntity+CoreDataClass.swift */,
 				F0BF02662C4025B1003C8AD9 /* UserEntity+CoreDataClass.swift */,
 				F0BF02672C4025B1003C8AD9 /* UserEntity+CoreDataProperties.swift */,
 				F0BF02682C4025B1003C8AD9 /* CompanyEntity+CoreDataClass.swift */,
@@ -144,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				F0BF02822C403A83003C8AD9 /* ViewModel.swift */,
+				F0BF02962C41250E003C8AD9 /* SplashViewModel.swift */,
+				F0BF029C2C41259E003C8AD9 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -171,8 +182,17 @@
 			isa = PBXGroup;
 			children = (
 				F0BF02912C410E17003C8AD9 /* Labels.swift */,
+				F0BF02942C411E50003C8AD9 /* Buttons.swift */,
 			);
 			path = Elements;
+			sourceTree = "<group>";
+		};
+		F0BF029E2C4127CC003C8AD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0BF029F2C4127E3003C8AD9 /* Localizable.xcstrings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +211,8 @@
 			dependencies = (
 			);
 			name = InforApps;
+			packageProductDependencies = (
+			);
 			productName = InforApps;
 			productReference = F0BF02242C40135B003C8AD9 /* InforApps.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +241,8 @@
 				Base,
 			);
 			mainGroup = F0BF021B2C40135B003C8AD9;
+			packageReferences = (
+			);
 			productRefGroup = F0BF02252C40135B003C8AD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +259,7 @@
 			files = (
 				F0BF022F2C40135D003C8AD9 /* Preview Assets.xcassets in Resources */,
 				F0BF022C2C40135D003C8AD9 /* Assets.xcassets in Resources */,
+				F0BF02A02C4127E3003C8AD9 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,16 +278,19 @@
 				F0BF02722C4025B1003C8AD9 /* UserEntity+CoreDataClass.swift in Sources */,
 				F0BF02742C4025B1003C8AD9 /* CompanyEntity+CoreDataClass.swift in Sources */,
 				F0BF02712C4025B1003C8AD9 /* CommentEntity+CoreDataProperties.swift in Sources */,
-				F0BF02342C40135D003C8AD9 /* InforApps.xcdatamodeld in Sources */,
 				F0BF028B2C4074B4003C8AD9 /* SplashScreen.swift in Sources */,
 				F0BF02922C410E17003C8AD9 /* Labels.swift in Sources */,
 				F0BF028F2C40846A003C8AD9 /* DetailView.swift in Sources */,
+				F0BF02952C411E50003C8AD9 /* Buttons.swift in Sources */,
 				F0BF02732C4025B1003C8AD9 /* UserEntity+CoreDataProperties.swift in Sources */,
+				F0BF029D2C41259E003C8AD9 /* DetailViewModel.swift in Sources */,
 				F0BF02832C403A83003C8AD9 /* ViewModel.swift in Sources */,
 				F0BF027A2C4025B1003C8AD9 /* AddressEntity+CoreDataClass.swift in Sources */,
+				F0BF02932C411A99003C8AD9 /* InforApps.xcdatamodeld in Sources */,
 				F0BF022A2C40135B003C8AD9 /* HomeView.swift in Sources */,
 				F0BF02782C4025B1003C8AD9 /* GeoEntity+CoreDataClass.swift in Sources */,
 				F0BF02282C40135B003C8AD9 /* InforAppsApp.swift in Sources */,
+				F0BF02972C41250E003C8AD9 /* SplashViewModel.swift in Sources */,
 				F0BF02862C407444003C8AD9 /* NetworkService.swift in Sources */,
 				F0BF02792C4025B1003C8AD9 /* GeoEntity+CoreDataProperties.swift in Sources */,
 				F0BF02772C4025B1003C8AD9 /* PostEntity+CoreDataProperties.swift in Sources */,

@@ -9,8 +9,6 @@ import SwiftUI
 import CoreData
 
 struct HomeView: View {
-    @StateObject private var viewModel = ViewModel()
-    
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: PostEntity.entity(), sortDescriptors: [])
     private var posts: FetchedResults<PostEntity>
@@ -33,7 +31,7 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationTitle("Publicaciones")
+            .navigationTitle(NSLocalizedString("Home_Title", comment: ""))
         }
     }
 }

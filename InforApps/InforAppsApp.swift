@@ -18,7 +18,7 @@ struct InforAppsApp: App {
             NavigationView {
                 SplashScreen()
                     .environment(\.managedObjectContext, persistenceController.context)
-                    .environmentObject(ViewModel())
+                    .environmentObject(SplashViewModel())
             }
         }
     }

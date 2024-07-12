@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    @StateObject private var viewModel = ViewModel()
+    @StateObject private var viewModel = DetailViewModel()
     
     var postId: Int
     var userId: Int
@@ -20,25 +20,26 @@ struct DetailView: View {
                     let user = viewModel.userById!
                     ScrollView {
                         VStack {
-                            LabelTitle(title: "Publicación")
+                            LabelTitle(title: NSLocalizedString("Detail_Post_Title", comment: ""))
 
-                            LabelH1(headline: "Titulo", subheadline: post.title ?? "NO TITLE")
-                            LabelH1(headline: "Contenido", subheadline: post.body ?? "NO BODY")
+                            LabelH1(headline: NSLocalizedString("Detail_Post_Title_Post", comment: ""), subheadline: post.title ?? "No_Data")
+                            LabelH1(headline: NSLocalizedString("Content_Post_Headline", comment: ""), subheadline: post.body ?? NSLocalizedString("No_Data", comment: ""))
                             
-                            LabelTitle(title: "Usuario")
+                            LabelTitle(title: NSLocalizedString("Detail_User_Title", comment: ""))
                             
-                            LabelH1(headline: "Nombre", subheadline: user.name ?? "No Name")
-                            LabelH1(headline: "Email", subheadline: user.email ?? "No Email")
-                            LabelH1(headline: "Compañia", subheadline: user.company?.name ?? "No Company Name")
+                            LabelH1(headline: NSLocalizedString("Detail_User_Title_Name", comment: ""), subheadline: user.name ?? NSLocalizedString("No_Data", comment: ""))
+                            LabelH1(headline: NSLocalizedString("Detail_User_Title_Email", comment: ""), subheadline: user.email ?? NSLocalizedString("No_Data", comment: ""))
+                            LabelH1(headline: NSLocalizedString("Detail_User_Title_Company", comment: ""), subheadline: user.company?.name ?? NSLocalizedString("No_Data", comment: ""))
+                            ButtonMapViewWebsite(latitude: Double(user.address?.geo?.lat ?? "0.000") ?? 0.00, longitude: Double(user.address?.geo?.lng ?? "0.0000") ?? 0.00, website: user.website ?? "https://www.apple.com/es/")
                             
-                            LabelTitle(title: "Comentarios")
+                            LabelTitle(title: NSLocalizedString("Detail_Comments_Title", comment: ""))
                             VStack {
                                 Form {
                                     ForEach(viewModel.commentsById!, id: \.self) {comment in
                                         VStack(alignment: .leading) {
-                                            Text(comment.name ?? "No Name")
+                                            Text(comment.name ?? NSLocalizedString("No_Data", comment: ""))
                                                 .font(.headline)
-                                            Text(comment.email ?? "No Email")
+                                            Text(comment.email ?? NSLocalizedString("No_Data", comment: ""))
                                                 .font(.subheadline)
                                                 .lineLimit(1)
                                         }
@@ -49,14 +50,14 @@ struct DetailView: View {
                         }.offset(y: -50)
                     }
                 } else {
-                    Text("Intentando recuperar los datos...")
+                    Text(NSLocalizedString("Recover_Data", comment: ""))
                 }
             } else {
-                Image("InforAppsImage")
+                Image(.inforApps)
                     .resizable()
                     .scaledToFit()
                     .padding()
-                Text("Cargando...")
+                Text(NSLocalizedString("Charge_Data", comment: ""))
                     .onAppear {
                         viewModel.searchCommentByPostId(postId: postId)
                         viewModel.searchUserById(userId: userId)
